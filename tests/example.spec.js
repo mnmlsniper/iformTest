@@ -8,5 +8,5 @@ test('test', async ({ page }) => {
   await page.getByTestId('price-textbox').fill('100');
   await page.getByTestId('date-stocked').fill('2024-10-04');
   await page.getByTestId('submit-form').click();
-  await expect(page.title()).toHaveTitle('https://commitquality.com/');
+  await expect(page).toHaveTitle('https://commitquality.com/');
 });
