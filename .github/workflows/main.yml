@@ -1,6 +1,6 @@
 name: Playwright Tests
 env:
-  DEMO: ${{ secrets.DEMO}}
+  DEMO: ${{secrets.DEMO}}
 on:
   push:
     branches: [main, master]
