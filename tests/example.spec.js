@@ -9,5 +9,6 @@ test("test", async ({ page }) => {
   await page.getByTestId("price-textbox").fill("100");
   await page.getByTestId("date-stocked").fill("2024-10-04");
   await page.getByTestId("submit-form").click();
+  await page.screenshot({ path: "screenshot.png", fullPage: true });
   await expect(page).toHaveTitle("CommitQuality - Test Automation Demo");
 });
