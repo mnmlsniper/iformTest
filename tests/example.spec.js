@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("test", async ({ page }) => {
+  console.log(process.env.USERNAME);
   console.log(process.env.DAY_OF_WEEK);
   console.log(process.env.Greeting);
   console.log("111");
