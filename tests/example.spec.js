@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("test", async ({ page }) => {
+  console.log(process.env.DEMO);
   await page.goto("https://commitquality.com/add-product");
   await page.getByTestId("product-textbox").click();
   await page.getByTestId("product-textbox").fill("Sniper");
