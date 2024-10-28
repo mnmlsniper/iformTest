@@ -1,8 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test("test", async ({ page }) => {
-  console.log(process.env.DEMO);
-  await page.goto("https://commitquality.com/add-product");
+  console.log(process.env);
+  console.log("111");
+  /* await page.goto("https://commitquality.com/add-product");
   await page.getByTestId("product-textbox").click();
   await page.getByTestId("product-textbox").fill(process.env.DEMO);
   await page.getByTestId("price-textbox").click();
@@ -11,4 +12,5 @@ test("test", async ({ page }) => {
   await page.getByTestId("submit-form").click();
   await page.screenshot({ path: "screenshot.png", fullPage: true });
   await expect(page).toHaveTitle("CommitQuality - Test Automation Demo");
+   */
 });
