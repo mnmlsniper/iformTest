@@ -28,6 +28,8 @@ jobs:
           First_Name: Mona
       - name: Run Playwright tests
         run: npx playwright test
+      - name: notifications
+        run: java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.8.0.jar
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
